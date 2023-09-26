@@ -1,4 +1,17 @@
-<?php
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="auth.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&display=swap" rel="stylesheet">
+	<title>Autenticação</title>
+</head>
+<body>
+	<main>
+	<?php
 if (
 	isset($_POST['nome']) && !empty($_POST['nome']) &&
 	isset($_POST['email']) && !empty($_POST['email']) &&
@@ -13,6 +26,7 @@ if (
 		$confirmaSenha = $_POST['confirmaSenha'];	
 		$cad = true;
 		if (strlen($nome) < 3){
+			
 			echo "O nome precisa conter no minimo 3 caracteres <br>";
 			$cad = false;
 	}
@@ -36,9 +50,13 @@ if (
 			
 		}
 		 if($cad){
-		 	echo "Cadastro realizado com sucesso!";
+		 	echo "<div class='true'>Cadastro realizado com sucesso!</div>";
 		 } else {
-		 	echo "Erro ao cadastrar! Tente novamente";
+		 	echo "Erro ao cadastrar! Tente novamente.";
 		 }
 }
 ?>
+	</main>
+
+</body>
+</html>

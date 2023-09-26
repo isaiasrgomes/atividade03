@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(226, 70, 70);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(26, 24, 24);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 20%;
+}
+
+.true {
+    color: rgb(54, 228, 83);
+}

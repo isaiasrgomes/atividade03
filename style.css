@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgba(113, 119, 113, 0.808);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    color: var(--main-color);
+    background: url("https://source.unsplash.com/random") center/cover;
+    --main-color: rgba(24, 133, 206, 0.637);
+    --secondary-color: rgb(241, 241, 241);
+
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    width: 100%;
+    padding: 30px;
+    background-color: var(--secondary-color);
+    border: 5px outset var(--main-color);
+}
+
+form input {
+    border: 3px outset var(--main-color);
+    padding: 2px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-family: "Dosis", sans-serif;
+}
+
+#button {
+    border-radius: 3px;
+    width: 70px;
+    background-color: var(--main-color);
+    border: 3px outset var(--secondary-color);
+    color: var(--secondary-color);
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#button:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border: 3px outset var(--main-color);
+    transition: 0.3s;
+}
